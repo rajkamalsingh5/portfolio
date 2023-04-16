@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <header>
+<div class="navbar">
+
+    <div class="logo">
+        <h1><span style="color: red;">R</span>AJKAMAL.</h1>
+    </div>
+    <ul>
+       
+        <li><a  href="#home" class="item">HOME</a></li>
+        <li><a  href="#about" class="item">ABOUT</a></li>
+        <li><a  href="project.html" class="item">PROJECTS</a></li>
+        <li><a  href="#contact" class="item">CONTACT</a></li>
+  
+    </ul>
+    <div class="ham">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</div>
+    </header>
+<div class="home" id="home">
+    <div class="intro">
+        <div>
+            <h1> Web Developer/Coder</h1>
+        </div>
+        <div class="name">
+            
+            <h1> Hi,I'm <span  style="color: red;">RAJKAMAL</span></h1>
+        </div>
+        <div>
+            <h1>SINGH Web Developer From <span style="color: red;">NIT-B</span></h1>
+
+        </div>
+        
+    </div>
+    <div class="image">
+<img src="mypic.jpeg" alt="rajubhai">
+    </div>
+</div>
+<h1 style="color: white; text-align: center;background-color: black;">A<span style="color: red;">B</span>OUT ME</h1>
+<div id="about" class="about">
+    <div>
+        <img src="mypic3.jpeg" alt="">
+ </div>
+<div>
+    <div class="more">
+        <h1><span><a href="#skills">SKILLS</a></span><span><a href="#academics">ACADEMICS</a></span></h1>
+   <p>Hey, this is Raj a 20 yr old guy currently pursuing btech form NIT-B in Electrical Engineering.</p>
+    </div>
+</div>
+ </div>
+ <div class="container">
+ <div id="skills">
+    <h1 style="color: red;  text-align: center;font-size: 50px;">SKILLS</h1>
+    <ul>
+        <li>DSA In Java(Beginner)</li>
+        <li>C Programming</li>
+        <li>Web Development</li>
+        <li>Singing Skills</li>
+        <li>Communication skills</li>
+        <li>Bilingual</li>
+        <li>Good in Drawing</li>
+    </ul>
+ </div>
+</div>
+<div class="container1">
+ <div id="academics">
+    <h1 style="color: red;  text-align: center;">ACADEMICS</h1>
+    <ul>
+        <li>Pursuing Btech From NIT-B</li>
+        <li>Qualified JEE adv.</li>
+        <li>Qualified JEE Mains</li>
+        <li>12th Cbse Board District Topper</li>
+        <li>Class 10th(96.4%)</li>
+        <li>9+ College CGPA</li>
+        
+    </ul>
+</div>
+ </div>
+ <footer>
+    <div id="contact">
+     <h1 style="color: white; background-color: black;text-align: center;">CO<span style="color: red;">N</span>TACT ME</h1>
+    <div class="footer">
+        <div class="img">
+            <a href="mailto:saurabhsingh75555@gmail.com">
+                
+            <img src="https://tse3.mm.bing.net/th?id=OIP.00XZ_94R8Kg4uBL66xeh9AHaHa&pid=Api&P=0" alt="mail">
+        </a>
+        </div>
+        <div class="img">
+     <a href="https://www.instagram.com/rajkamalsingh__/">
+            <img src="https://tse4.mm.bing.net/th?id=OIP.qTFTvxkcrV2K1R8P4QZw-AHaHa&pid=Api&P=0"  alt="insta">
+        </a>
+        </div>
+        <div class="img">
+            <a href="https://www.linkedin.com/in/raj-kamal-singh-94680521b">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.4VTaUmIQtpxUnl8L6QLh4gHaHa&pid=Api&P=0" alt="linkedin">
+        </a>
+        </div>
+        <span style="color: white;text-align: center;font-size: 30px; word-spacing: 5px;">copyright © Rajkamal. 2023</span>
+    </div>
+</div>
+ </footer>
+</body>
+<script>
+    const ham=document.querySelector(".ham");
+    const navbar=document.querySelector(".navbar");
+    const item=document.querySelectorAll(".item");
+    ham.addEventListener("click",()=>
+    {
+        ham.classList.toggle("chalu");
+        navbar.classList.toggle("chalu");
+    });
+    item.forEach((e) => {
+        e.addEventListener("click",()=>{
+           
+        ham.classList.remove("chalu");
+        navbar.classList.remove("chalu"); 
+        })
+    });
+</script>
+</html>
